@@ -12,7 +12,7 @@ The following CodeSandbox demo is the simplest use case, and it's also a good ha
 
 - [![Vue Antd Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/2wpk21kzvr)
 
-## Import vue-antd-ui
+## Import ui-vue-antd
 
 ### 1. Installation
 
@@ -34,14 +34,14 @@ $ vue init webpack antd-demo
 
 
 ```bash
-$ npm i --save vue-antd-ui
+$ npm i --save ui-vue-antd
 ```
 **Fully import**
 ```jsx
 import Vue from 'vue'
-import Antd from 'vue-antd-ui'
+import Antd from 'ui-vue-antd'
 import App from './App'
-import 'vue-antd-ui/dist/antd.css'
+import 'ui-vue-antd/dist/antd.css'
 Vue.config.productionTip = false
 
 Vue.use(Antd)
@@ -58,7 +58,7 @@ The above imports Antd entirely. Note that CSS file needs to be imported separat
 **Only import the components you need**
 ```jsx
 import Vue from 'vue'
-import { Button, message } from 'vue-antd-ui'
+import { Button, message } from 'ui-vue-antd'
 import App from './App'
 
 Vue.config.productionTip = false
@@ -93,7 +93,7 @@ If you are using babel, we strongly recommend using [babel-polyfill](https://bab
 
 ## Import on Demand
 
-If you see logs like below screenshot, you might be importing all components by writing `import { Button } from 'vue-antd-ui';`. This will affect your app's network performance.
+If you see logs like below screenshot, you might be importing all components by writing `import { Button } from 'ui-vue-antd';`. This will affect your app's network performance.
 
 ```
 You are using a whole package of antd, please use https://www.npmjs.com/package/babel-plugin-import to reduce app bundle size.
@@ -104,19 +104,19 @@ You are using a whole package of antd, please use https://www.npmjs.com/package/
 However, we can import individual components on demand:
 
 ```jsx
-import Button from 'vue-antd-ui/lib/button';
-import 'vue-antd-ui/lib/button/style'; // or vue-antd-ui/lib/button/style/css for css format file
+import Button from 'ui-vue-antd/lib/button';
+import 'ui-vue-antd/lib/button/style'; // or ui-vue-antd/lib/button/style/css for css format file
 ```
 
 We strongly recommend using [babel-plugin-import](https://github.com/ant-design/babel-plugin-import), which can convert the following code to the 'antd/lib/xxx' way:
 
 ```jsx
-import { Button } from 'vue-antd-ui';
+import { Button } from 'ui-vue-antd';
 ```
 
 And this plugin can load styles too, read [usage](https://github.com/ant-design/babel-plugin-import#usage) for more details.
 
-> FYI, babel-plugin-import's `style` option will importing some global reset styles, don't use it if you don't need those styles. You can import styles manually via `import 'vue-antd-ui/dist/antd.css'` and override the global reset styles.
+> FYI, babel-plugin-import's `style` option will importing some global reset styles, don't use it if you don't need those styles. You can import styles manually via `import 'ui-vue-antd/dist/antd.css'` and override the global reset styles.
 
 ## Customization
 

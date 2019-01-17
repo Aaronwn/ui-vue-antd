@@ -1,7 +1,7 @@
 <script>
 import Trigger from '../index'
 import '../assets/index.less'
-import { Input, Button } from 'vue-antd-ui'
+import { Input, Button } from 'ui-vue-antd'
 function getPopupAlign (state) {
   return {
     offset: [state.offsetX, state.offsetY],

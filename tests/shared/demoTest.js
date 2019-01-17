@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 import MockDate from 'mockdate'
 import moment from 'moment'
 import Vue from 'vue'
-import antd from 'vue-antd-ui'
+import antd from 'ui-vue-antd'
 Vue.use(antd)
 
 export default function demoTest (component, options = {}) {

@@ -201,7 +201,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       'antd': path.join(__dirname, 'components'),
-      'vue-antd-ui': path.join(__dirname, 'components'),
+      'ui-vue-antd': path.join(__dirname, 'components'),
       '@': path.join(__dirname, ''),
     },
   },

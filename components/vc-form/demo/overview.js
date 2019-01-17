@@ -1,7 +1,7 @@
 /* eslint react/no-multi-comp:0, no-console:0 */
 
 import createDOMForm from '../src/createDOMForm'
-import { DatePicker, Select } from 'vue-antd-ui'
+import { DatePicker, Select } from 'ui-vue-antd'
 import { regionStyle, errorStyle } from './styles'
 const { Option } = Select
 

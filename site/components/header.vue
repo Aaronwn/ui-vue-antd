@@ -34,8 +34,7 @@ export default {
         <a-row>
           <a-col xxl={4} xl={5} lg={5} md={6} sm={24} xs={24}>
             <router-link to={{ path: '/ant-design' }} id='logo'>
-              <img alt='logo' height='32' src='//www.aixuexi.com/images/newindex/logo.png' />
-              <span>  VUE-ANTD</span>
+              <img alt='logo' height='32' src='//q-fe.aixuexi.com/arch-head/img/header/new-logo.png' />
             </router-link>
           </a-col>
           <a-col xxl={20} xl={19} lg={19} md={18} sm={0} xs={0}>

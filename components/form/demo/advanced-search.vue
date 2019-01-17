@@ -12,7 +12,7 @@ Because the width of label is not fixed, you may need to adjust it by customizin
 
 
 <script>
-import { Form } from 'vue-antd-ui'
+import { Form } from 'ui-vue-antd'
 import { setTimeout } from 'timers'
 
 const AdvancedSearchForm = {

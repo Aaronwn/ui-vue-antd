@@ -16,7 +16,7 @@ Customized or third-party form controls can be used in Form, too. Controls must 
 
 
 <script>
-import { Form } from 'vue-antd-ui'
+import { Form } from 'ui-vue-antd'
 
 const hasProp = (instance, prop) => {
   const $options = instance.$options || {}

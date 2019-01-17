@@ -31,7 +31,7 @@ module.exports = {
   testRegex: libDir === 'dist' ? 'demo\\.test\\.js$' : '.*\\.test\\.js$',
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1",
-    "vue-antd-ui": "<rootDir>/components/index.js",
+    "ui-vue-antd": "<rootDir>/components/index.js",
   },
   snapshotSerializers: [
     "<rootDir>/node_modules/jest-serializer-vue"

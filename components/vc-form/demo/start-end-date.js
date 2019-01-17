@@ -1,6 +1,6 @@
 /* eslint no-console:0 */
 
-import { DatePicker } from 'vue-antd-ui'
+import { DatePicker } from 'ui-vue-antd'
 import createDOMForm from '../src/createDOMForm'
 import { regionStyle, errorStyle } from './styles'
 

@@ -2,7 +2,7 @@
 
 import BaseMixin from '../../_util/BaseMixin'
 import createDOMForm from '../src/createDOMForm'
-import { Modal } from 'vue-antd-ui'
+import { Modal } from 'ui-vue-antd'
 import { regionStyle, errorStyle } from './styles'
 
 const Form = {

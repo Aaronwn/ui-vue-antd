@@ -10,7 +10,7 @@ Normal login form which can contain more elements.
 
 
 <script>
-import { Form } from 'vue-antd-ui'
+import { Form } from 'ui-vue-antd'
 
 const NormalLoginForm = {
   methods: {

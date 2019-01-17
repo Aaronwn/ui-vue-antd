@@ -48,18 +48,18 @@ $ npm run dev
 └── yarn.lock
 ```
 
-现在从 yarn 或 npm 安装并引入 vue-antd-ui。
+现在从 yarn 或 npm 安装并引入 ui-vue-antd。
 
 ```bash
-$ yarn add vue-antd-ui
+$ yarn add ui-vue-antd
 ```
 
 修改 `src/main.js`，引入 antd 的按钮组件以及全部样式文件。
 
 ```jsx
 import Vue from 'vue'
-import Button from 'vue-antd-ui/lib/button'
-import 'vue-antd-ui/dist/antd.css'
+import Button from 'ui-vue-antd/lib/button'
+import 'ui-vue-antd/dist/antd.css'
 import App from './App'
 
 Vue.component(Button.name, Button)
@@ -119,20 +119,20 @@ $ yarn add babel-plugin-import --dev
 +   "plugins": [
 +     "transform-vue-jsx",
 +     "transform-runtime",
-+     ["import", { "libraryName": "vue-antd-ui", "libraryDirectory": "es", "style": "css" }]
++     ["import", { "libraryName": "ui-vue-antd", "libraryDirectory": "es", "style": "css" }]
 +   ]
   }
 ```
 
 
-然后移除前面在 `src/main.js` 里全量添加的 `import 'vue-antd-ui/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
+然后移除前面在 `src/main.js` 里全量添加的 `import 'ui-vue-antd/dist/antd.css';` 样式代码，并且按下面的格式引入模块。
 
 ```diff
   // src/main.js
   import Vue from 'vue'
-- import Button from 'vue-antd-ui/lib/button';
-+ import { Button } from 'vue-antd-ui';
-- import 'vue-antd-ui/dist/antd.css'
+- import Button from 'ui-vue-antd/lib/button';
++ import { Button } from 'ui-vue-antd';
+- import 'ui-vue-antd/dist/antd.css'
   import App from './App'
 
   Vue.component(Button.name, Button)

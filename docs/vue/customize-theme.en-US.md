@@ -1,7 +1,7 @@
 
 # Customize Theme
 
-The structure and styles of vue-antd-ui are exactly the same as those of Antd. You can refer to the Antd React customization mode for configuration.
+The structure and styles of ui-vue-antd are exactly the same as those of Antd. You can refer to the Antd React customization mode for configuration.
 
 Ant Design allows you to customize some basic design aspects in order to meet the needs of UI diversity from business and brand, including primary color, border radius, border color, etc.
 
@@ -34,7 +34,7 @@ Note:
 
 - Importing styles from less files is necessary.
   - If you import styles by specifying the `style` option of [babel-plugin-import](https://github.com/ant-design/babel-plugin-import), change it from `'css'` to `true`, which will import the `less` version of antd.
-  - If you import styles from `'vue-antd-ui/dist/antd.css'`, change it to `vue-antd-ui/dist/antd.less`.
+  - If you import styles from `'ui-vue-antd/dist/antd.css'`, change it to `ui-vue-antd/dist/antd.less`.
 - If you want to override `@icon-url`, the value must be contained in quotes like `"@icon-url": "'your-icon-font-path'"`.
 
 ### 2) Overriding Less variables (alternative way)
@@ -44,7 +44,7 @@ Override variables via less definition files.
 Create a standalone less file like the one below, and import it in your project.
 
    ```less
-   @import "~vue-antd-ui/dist/antd.less";   // import official less entry file
+   @import "~ui-vue-antd/dist/antd.less";   // import official less entry file
    @import "your-theme-file.less";   // override variables here
    ```
 

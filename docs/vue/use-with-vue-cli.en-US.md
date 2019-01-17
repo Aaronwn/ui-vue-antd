@@ -48,18 +48,18 @@ Below is the default directory structure.
 └── yarn.lock
 ```
 
-Now we install `vue-antd-ui` from yarn or npm.
+Now we install `ui-vue-antd` from yarn or npm.
 
 ```bash
-$ yarn add vue-antd-ui
+$ yarn add ui-vue-antd
 ```
 
 Modify `src/main.js`, import Button component from `antd`.
 
 ```jsx
 import Vue from 'vue'
-import Button from 'vue-antd-ui/lib/button'
-import 'vue-antd-ui/dist/antd.css'
+import Button from 'ui-vue-antd/lib/button'
+import 'ui-vue-antd/dist/antd.css'
 import App from './App'
 
 Vue.component(Button.name, Button)
@@ -122,19 +122,19 @@ Modify `.babelrc`.
 +   "plugins": [
 +     "transform-vue-jsx",
 +     "transform-runtime",
-+     ["import", { "libraryName": "vue-antd-ui", "libraryDirectory": "es", "style": "css" }]
++     ["import", { "libraryName": "ui-vue-antd", "libraryDirectory": "es", "style": "css" }]
 +   ]
   }
 ```
 
-Remove the `import 'vue-antd-ui/dist/antd.css';` statement added before because `babel-plugin-import` will import styles and import components like below:
+Remove the `import 'ui-vue-antd/dist/antd.css';` statement added before because `babel-plugin-import` will import styles and import components like below:
 
 ```diff
   // src/main.js
   import Vue from 'vue'
-- import Button from 'vue-antd-ui/lib/button';
-+ import { Button } from 'vue-antd-ui';
-- import 'vue-antd-ui/dist/antd.css'
+- import Button from 'ui-vue-antd/lib/button';
++ import { Button } from 'ui-vue-antd';
+- import 'ui-vue-antd/dist/antd.css'
   import App from './App'
 
   Vue.component(Button.name, Button)

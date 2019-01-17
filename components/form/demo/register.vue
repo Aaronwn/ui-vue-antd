@@ -10,7 +10,7 @@ Fill in this form to create a new account for you.
 
 
 <script>
-import { Form } from 'vue-antd-ui'
+import { Form } from 'ui-vue-antd'
 
 const residences = [{
   value: 'zhejiang',
